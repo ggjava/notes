@@ -107,37 +107,37 @@ steel-server-agent提供MegaCli64Adapter支持MegaCli工具。
 
 支持机型：
 
-* MANUFACTURER = "Dell Inc."
+* MANUFACTURER = "Dell Inc." 
   PRODUCT_NAME = "PowerEdge R730xd ("SKU=NotProvided;ModelName=PowerEdge R730XD)"
 
-* MANUFACTURER = "Dell Inc."
+* MANUFACTURER = "Dell Inc." 
   PRODUCT_NAME = "PowerEdge R630 (SKU=NotProvided;ModelName=PowerEdge R630)"
 
-* MANUFACTURER = "Dell Inc."
+* MANUFACTURER = "Dell Inc." 
   PRODUCT_NAME = "PowerEdge R740xd (SKU=NotProvided;ModelName=PowerEdge R740xd)"
 
-* MANUFACTURER = "Dell Inc."
+* MANUFACTURER = "Dell Inc." 
   PRODUCT_NAME = "PowerEdge R740 (SKU=NotProvided;ModelName=PowerEdge R740)"
 
-* MANUFACTURER = "FiberHome"
+* MANUFACTURER = "FiberHome" 
   PRODUCT_NAME = "FitServer R2200 (Default string)"
 
-* MANUFACTURER = "Huawei"
+* MANUFACTURER = "Huawei" 
   PRODUCT_NAME = "RH1288 V3 (Type1Sku0)"
 
-* MANUFACTURER = "Lenovo"
+* MANUFACTURER = "Lenovo" 
   PRODUCT_NAME = "ThinkSystem SR630 -[7X02CTO1WW]- (none)"
 
-* MANUFACTURER = "LENOVO"
+* MANUFACTURER = "LENOVO" 
   PRODUCT_NAME = "System x3650 M5: -[8871AC1]- ((none))"
 
-* MANUFACTURER = "Lenovo"
+* MANUFACTURER = "Lenovo" 
   PRODUCT_NAME = "ThinkSystem SR650 -[7X06CTO1WW]- (7X06CTO1WW)"
 
-* MANUFACTURER = "Sugon"
+* MANUFACTURER = "Sugon" 
   PRODUCT_NAME = "I620-G30 (98001156)"
   
-* MANUFACTURER = "Sugon"
+* MANUFACTURER = "Sugon" 
   PRODUCT_NAME = "I840-G30 (98001181)"
 
 #### MegaCli工具使用方法
@@ -181,10 +181,10 @@ steel-server-agent提供SAS3IRCUAdapter支持sas3ircu工具。
 
 支持机型：
 
-* MANUFACTURER = "Dell Inc."
+* MANUFACTURER = "Dell Inc." 
   PRODUCT_NAME = "PowerEdge R740xd (SKU=NotProvided;ModelName=PowerEdge R740xd)"
 
-* MANUFACTURER = "Sugon"
+* MANUFACTURER = "Sugon" 
   PRODUCT_NAME = "W580-G20 (Default string)"
 
 #### sas3ircu使用方法
@@ -197,10 +197,10 @@ steel-server-agent提供SsacliAdapter支持ssacli工具。
 
 支持机型：
 
-* MANUFACTURER = "HPE"
+* MANUFACTURER = "HPE" 
   PRODUCT_NAME = "ProLiant DL560 Gen10 (841730-B21)"
 
-* MANUFACTURER = "HPE"
+* MANUFACTURER = "HPE" 
   PRODUCT_NAME = "ProLiant DL380 Gen10 (868703-B21)"
 
 #### ssacli使用方法
@@ -213,13 +213,13 @@ steel-server-agent提供StorcliAdapter支持storcli64工具。
 
 支持机型：
 
-* MANUFACTURER = "Huawei"
+* MANUFACTURER = "Huawei" 
   PRODUCT_NAME = "2288H V5 (Type1Sku0)"
 
-* MANUFACTURER = "Huawei"
+* MANUFACTURER = "Huawei" 
   PRODUCT_NAME = "2288H V5 (Purley)"
 
-* MANUFACTURER = "Huawei"
+* MANUFACTURER = "Huawei" 
   PRODUCT_NAME = "G560 V5 (Purley)"
 
 #### ssacli使用方法 
