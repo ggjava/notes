@@ -1,6 +1,6 @@
 ## DHCP简介
 
-DHCP（Dynamic Host Configuration Protocol，动态主机配置协议）用来为网络设备动态地分配IP地址等网络配置参数。
+DHCP（Dynamic Host Configuration Protocol，动态主机配置协议）用来为网络设备动态地分配IP地址等网络配置参数。  
 DHCP采用客户端/服务器通信模式，由客户端向服务器提出请求分配网络配置参数的申请，服务器返回为客户端分配的IP地址等配置信息，以实现IP地址等信息的动态配置。
 
 ## DHCP的IP地址分配
