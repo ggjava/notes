@@ -81,9 +81,7 @@ DHCP客户端如果需要从DHCP服务器端获取更为详细的配置信息，
 
 ### DHCP报文格式
 
-DHCP8种类型的报文，每种报文的格式都相同，只是某些字段的取值不同。DHCP的报文格式如图1-3所示，括号中的数字表示该字段所占的字节。
-
-DHCP报文格式：
+DHCP8种类型的报文，每种报文的格式都相同，只是某些字段的取值不同。DHCP的报文格式如下图所示，括号中的数字表示该字段所占的字节。
 
 ![DHCP报文格式](/images/dhcp_message.png)
 
@@ -157,7 +155,7 @@ DHCP选项的格式如图1-4所示。
 
 ## 协议规范
 
-与DHCP相关的协议规范有：
+与DHCP相关的协议规范：
 
 * RFC 2131：Dynamic Host Configuration Protocol
 
@@ -168,4 +166,3 @@ DHCP选项的格式如图1-4所示。
 * RFC 3046：DHCP Relay Agent Information Option
 
 * RFC 3442：The Classless Static Route Option for Dynamic Host Configuration Protocol (DHCP) version 4
-
