@@ -155,6 +155,85 @@ DHCP选项的格式下图所示：
 
 更多DHCP选项的介绍，请参见RFC 2132和RFC 3442。
 
+### tcpdump抓包
+
+```
+13:40:08.914661 IP (tos 0x0, ttl 64, id 0, offset 0, flags [none], proto UDP (17), length 576)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 34:80:0d:45:86:fc (oui Unknown), length 548, xid 0xe4586fc, secs 4, Flags [Broadcast] (0x8000)
+	  Client-Ethernet-Address 34:80:0d:45:86:fc (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Discover
+	    Parameter-Request Option 55, length 24:
+	      Subnet-Mask, Time-Zone, Default-Gateway, IEN-Name-Server
+	      Domain-Name-Server, RL, Hostname, BS
+	      Domain-Name, SS, RP, EP
+	      Vendor-Option, Server-ID, Vendor-Class, BF
+	      Option 128, Option 129, Option 130, Option 131
+	      Option 132, Option 133, Option 134, Option 135
+	    MSZ Option 57, length 2: 1260
+	    GUID Option 97, length 17: 0.68.69.76.76.68.0.16.86.128.53.180.192.79.84.89.50
+	    ARCH Option 93, length 2: 0
+	    NDI Option 94, length 3: 1.2.1
+	    Vendor-Class Option 60, length 32: "PXEClient:Arch:00000:UNDI:002001"
+
+13:40:08.915481 IP (tos 0xc0, ttl 64, id 56444, offset 0, flags [none], proto UDP (17), length 335)
+    test-env-gz03-pxe-server-11e50e63e87.bootps > 255.255.255.255.bootpc: [udp sum ok] BOOTP/DHCP, Reply, length 307, xid 0xe4586fc, secs 4, Flags [Broadcast] (0x8000)
+	  Your-IP 192.168.2.151
+	  Server-IP 192.168.2.6
+	  Client-Ethernet-Address 34:80:0d:45:86:fc (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Offer
+	    Server-ID Option 54, length 4: 192.168.2.6
+	    Lease-Time Option 51, length 4: 43200
+	    BF Option 67, length 19: "i386/grubneti386.0^@"
+	    RN Option 58, length 4: 21600
+	    RB Option 59, length 4: 37800
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    BR Option 28, length 4: 192.168.2.255
+	    Default-Gateway Option 3, length 4: 192.168.2.6
+
+13:40:15.945733 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto UDP (17), length 576)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 34:80:0d:45:86:fc (oui Unknown), length 548, xid 0xe4586fc, secs 4, Flags [Broadcast] (0x8000)
+	  Client-Ethernet-Address 34:80:0d:45:86:fc (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Request
+	    Requested-IP Option 50, length 4: 192.168.2.151
+	    Parameter-Request Option 55, length 24:
+	      Subnet-Mask, Time-Zone, Default-Gateway, IEN-Name-Server
+	      Domain-Name-Server, RL, Hostname, BS
+	      Domain-Name, SS, RP, EP
+	      Vendor-Option, Server-ID, Vendor-Class, BF
+	      Option 128, Option 129, Option 130, Option 131
+	      Option 132, Option 133, Option 134, Option 135
+	    MSZ Option 57, length 2: 1260
+	    Server-ID Option 54, length 4: 192.168.2.6
+	    GUID Option 97, length 17: 0.68.69.76.76.68.0.16.86.128.53.180.192.79.84.89.50
+	    ARCH Option 93, length 2: 0
+	    NDI Option 94, length 3: 1.2.1
+	    Vendor-Class Option 60, length 32: "PXEClient:Arch:00000:UNDI:002001"
+
+13:40:15.946999 IP (tos 0xc0, ttl 64, id 59497, offset 0, flags [none], proto UDP (17), length 335)
+    test-env-gz03-pxe-server-11e50e63e87.bootps > 255.255.255.255.bootpc: [udp sum ok] BOOTP/DHCP, Reply, length 307, xid 0xe4586fc, secs 4, Flags [Broadcast] (0x8000)
+	  Your-IP 192.168.2.151
+	  Server-IP 192.168.2.6
+	  Client-Ethernet-Address 34:80:0d:45:86:fc (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: ACK
+	    Server-ID Option 54, length 4: 192.168.2.6
+	    Lease-Time Option 51, length 4: 43200
+	    BF Option 67, length 19: "i386/grubneti386.0^@"
+	    RN Option 58, length 4: 21600
+	    RB Option 59, length 4: 37800
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    BR Option 28, length 4: 192.168.2.255
+	    Default-Gateway Option 3, length 4: 192.168.2.6
+```
+
+
 ## 协议规范
 
 与DHCP相关的协议规范：
@@ -168,3 +247,4 @@ DHCP选项的格式下图所示：
 * RFC 3046：DHCP Relay Agent Information Option
 
 * RFC 3442：The Classless Static Route Option for Dynamic Host Configuration Protocol (DHCP) version 4
+
